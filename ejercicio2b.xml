@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?xml-stylesheet type="text/css" href="ejercicios_estilos.css"?>
 <!-- ejemplo2.xml  RS20002 -->
 <pais nombre="El Salvador" moneda="DolarUSD">
 <departamento id="1" nombre="San Salvador">

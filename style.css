@@ -1,72 +1,218 @@
+:root {
+    --beige: #7a5c3c;
+    --beigeclaro: #b08e6b;
+    --piel: #e8c39e;
+    --rosa: #f5e1ce;
+    --blanco: #ffffff;
+    --degradado: linear-gradient(90deg, var(--piel), var(--beige));
+}
+
+*::selection {
+    background: var(--rosa);
+    color: white;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--beige);
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+header {
+    position: flex;
+    display: flex;
+    font-family: sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 9%;
+    z-index: 1000;
+}
+
+#info {
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 1rem;
+
+}
+
+#info h1 {
+    color: var(--beige);
+}
+
+#info h2 {
+    color: var(--beigeclaro);
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    color: var(--beige);
+}
+
+.Logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: var(--beige);
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: var(--beigeclaro);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: whitesmoke;
+}
+
+.content {
+    min-height: 30vh;
+    padding: 0 9%;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+}
+
+.item a {
+    color: var(--piel);
+}
+
 #cuadricula {
+    padding-top: 30px;
     /*transforma la #cuadricula en un contenedor grid:*/
     display: grid;
     /*esto genera 3 columnas iguales cuya anchura es 1fr */
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     /*establece el espaciado entre los ítems del grid*/
-    grid-gap:1em;
+    grid-gap: 1em;
 }
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+.about_me{
+    width: 100%;
+    background-color: var(--beige);
+}
+.about_me .grupo1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 45px;
+}
+.about_me .grupo1 .box h2{
+    color: var(--piel);
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.about_me .grupo1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+.about_me .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_me .grupo1 .box figure img{
+    width: 250px;
+}
+.about_me .grupo2{
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    background-color: var(--beigeclaro);
+}
+.about_me .grupo2 small{
+    color: white;
+    
+}
+.about_me .grupo2 small b{
+    color: white;
+}
+
+
+
+/*Groundhog*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1em;
-    
-  }
+}
 
 img {
-    height: auto;
     width: 100%;
-  }
+    height: auto;
+}
 
 .location-listing {
     position: relative;
     overflow: hidden;
-  }
-   
+}
+
 .location-title {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(90,0,10,0.4);
-  }
+    background: rgba(90, 0, 10, 0.4);
 
-.location-image {
-    line-height: 0;
-  }
-
-.location-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(90,0,10,0.4);
-     
     /* typographic styles */
     color: white;
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
-     
+
     /* position the text centrally*/
     display: flex;
     align-items: center;
     justify-content: center;
+
     /* hide the title by default */
     opacity: 0;
     transition: opacity .5s;
-  }
+}
+
+.location-image {
+    line-height: 0;
+}
+
 .location-listing:hover .location-title {
     opacity: 1;
-  }
+}
+
 .location-image img {
     filter: blur(0px);
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
-  }
-   
-  .location-listing:hover .location-image img {
+}
+
+.location-listing:hover .location-image img {
     filter: blur(2px);
-  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,28 @@
     <meta name="author" content="Carlos Eduardo Rafaelano Santos - RS20002">
     <meta name="description" content="Pagina dinamica para implementación de archivos XML">
     <title>XML_RS20002</title>
-    <link href="style.css" rel="stylesheet" type="text/css">   
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <div class="head">
-        <div class="navbar">
-            <h3>Bienvenido</h3>
-            <a href="#">Acerca de mi</a>
+    <!--Todo lo que va en el encabezado-->
+    <header>
+        <div class="Logo">
+            <img src="logo.png" alt="logo">
+            <h2>Bienvenidos</h2>
         </div>
-    </div>
-    <header class="title" >
-        <h1 class="title">TPI115 RS20002 - Hola soy Carlos Rafaelano</h1>
-        <h2>Esta es mi Pagina</h2>    
+        <nav>
+            <a href="#about" class="nav_link">Sobre mi</a>
+        </nav>
     </header>
-    <div>
+    <!--Información-->
+    <div id="info">
+        <h1 class="title">TPI115 RS20002 - Hola soy Carlos Rafaelano</h1>
+        <h2>Esta es mi Pagina</h2>
+    </div>
+    <!--Contenido y cosas varias-->
+
+    <div class="content">
         <h2>Ejercicios XML</h2>
         <div id="cuadricula">
             <div class="item"><a href="ejemplo1.xml">Ejemplo 1 XML</a></div>
@@ -33,17 +42,49 @@
             <div class="item"><a href="ejercicio2b.xml">Ejercicio 2b XML</a></div>
         </div>
     </div>
-    <div class="child-page-listing">
-        <h2>Ground Hog</h2>
-        <article class="location-listing" >
-          <a class="location-title" href="#">Ground Hog</a>
-          <div class="location-image" >
-            <a href="https://www.nationalgeographic.com/animals/mammals/facts/groundhog">
-                <img  src="https://www.ncwildlife.org/Portals/0/Learning/images/Species/Mammals/Groundhog-Standing2_adj.jpg" alt="Groundhog-Standing2_adj">
-            </a>
-          </div>
-        </article>
-        <!-- more articles -->
-      </div>
+
+    <!--Groundhog-->
+    <section>
+        <div class="groundhog">
+            <div class="child-page-listing">
+                <h2>Groundhog</h2>
+                <p>More about Groundhog click image below</p>
+                <article class="location-listing">
+                    <a class="location-title" href="https://www.nationalgeographic.com/animals/mammals/facts/groundhog">Groundhog</a>
+                    <div class="location-image">
+                        <a href="https://www.nationalgeographic.com/animals/mammals/facts/groundhog">
+                            <img src="https://www.ncwildlife.org/Portals/0/Learning/images/Species/Mammals/Groundhog-Standing2_adj.jpg"
+                                alt="Groundhog-Standing2_adj">
+                        </a>
+                    </div>
+                </article>
+                <!-- more articles -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="about_me" id="about">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <img src="logo.png" alt="Logo">
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre mi</h2>
+                <p>Hola me llamo Carlos Eduardo Rafaelano Santos, tengo 21 años,
+                    estudio la carrera de Ingenieria de Sistemas Informaticos
+                    en la Universidad de El Salvador, actualmente cursando ciclo 6
+                </p>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2022 <b>Carlos Rafaelano</b> - Todos los Dererchos Reservados</small>
+        </div>
+
+
+    </footer>
+
 </body>
+
 </html>
