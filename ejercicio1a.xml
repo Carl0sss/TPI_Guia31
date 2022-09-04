@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ejercicios_estilos.css"?>
+<!-- ejercicio1a.xml  RS20002 -->
+<fichero>
+<ficha id="1" fechaingreso="1/11/2012">
+<nombre>Carlos</nombre>
+<apellido>Eduardo</apellido>
+<telefono tipo="celular">123456</telefono>
+<email>rs20002@gmail.com</email>
+<direccion>Calle de Los Andes, 45</direccion>
+</ficha>
+<ficha id="2" fechaingreso="1/11/2012">
+<nombre>Carlos</nombre>
+<apellido>Eduardo</apellido>
+<telefono tipo="celular">123456</telefono>
+<email>rs20002@gmail.com</email>
+<direccion>Calle de Los Andes, 45</direccion>
+</ficha>
+</fichero> 
